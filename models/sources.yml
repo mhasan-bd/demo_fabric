@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: Raw employee data loaded by the 01_bronze notebook
+    database: LH_Bronze      # lakehouse in the same workspace (cross-database query)
+    schema: dbo
+    tables:
+      - name: bronze_employees

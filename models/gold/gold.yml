@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: gold_employees
+    columns:
+      - name: employee_id
+        tests: [unique, not_null]
+  - name: gold_salary_by_job_title
+    columns:
+      - name: job_title
+        tests: [unique, not_null]
+  - name: gold_salary_by_gender
+    columns:
+      - name: gender
+        tests: [unique, not_null]
+  - name: gold_salary_bands
+    columns:
+      - name: salary_band
+        tests: [unique, not_null]

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: silver_employees
+    description: Cleaned, typed and deduplicated employees
+    columns:
+      - name: employee_id
+        tests: [unique, not_null]
+      - name: salary
+        tests:
+          - not_null:
+              config:
+                severity: warn

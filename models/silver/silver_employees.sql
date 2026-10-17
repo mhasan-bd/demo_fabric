@@ -32,6 +32,6 @@ select
     salary,
     latitude,
     longitude,
-    _ingested_at
+    "ingested_at" as new_col
 from deduped
 where rn = 1

@@ -1,4 +1,18 @@
+# dbt build output
 target/
 dbt_packages/
 logs/
+
+# macOS
 .DS_Store
+
+# local dbt profile (contains your server/login setup)
+demo_fabric/profiles.yml
+
+# local Docker runner
+Dockerfile
+dbt.sh
+.user.yml
+profiles.yml
+Profiles.yml
+!demo_fabric/ci/profiles.yml
